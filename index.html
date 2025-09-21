@@ -2,7 +2,15 @@
      <head> 
             <title>Jasinski 3k1</title> 
           <script language="JavaScript"> 
-             function WinOpen_jasi3()  
+function WinOpen_jasi1()  
+               { 
+window.open("zadane1_jasi.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
+               }
+function WinOpen_jasi2()  
+               { 
+window.open("zadane2_jasi.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
+               }
+function WinOpen_jasi3()  
                { 
 window.open("zadane3_jasi.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200"); 
                } 
@@ -10,6 +18,10 @@ function WinOpen_jasi4()
                { 
 window.open("zadane4_jasi.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
                } 
+function WinOpen_jasi5()  
+               { 
+window.open("zadane5_jasi.html","okienko_z5","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400"); 
+               }
 function okno_zamknij()  
                        { 
                              window.close() 
@@ -18,10 +30,14 @@ function okno_zamknij()
       </head> 
 <body> 
    <form> 
+        <input type="button_z1" name="zadanie1" value="zadanie1-Jasinski" onclick="WinOpen_jasi1(' ')"> 
+        <input type="button_z2" name="zadanie2" value="zadanie2-Jasinski" onclick="WinOpen_jasi2(' ')"> 
         <input type="button_z3" name="zadanie3" value="zadanie3-Jasinski" onclick="WinOpen_jasi3(' ')"> 
         <input type="button_z4" name="zadanie4" value="zadanie4-Jasinski" onclick="WinOpen_jasi4(' ')"> 
+        <input type="button_z5" name="zadanie5" value="zadanie5-Jasinski" onclick="WinOpen_jasi5(' ')"> 
         <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
     </form> 
 </body> 
 </html> 
+
 
