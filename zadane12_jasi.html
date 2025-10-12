@@ -11,7 +11,7 @@
  var b=parseFloat(D2_jasi);
  var g1=parseFloat(G1_jasi);
  var g2=parseFloat(G2_jasi);
- sekund=((a*24+g1)+(b*24+g2))*3600;
+ sekund=((a*24+g1)-(b*24+g2))*3600;
  document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
  function okno_zamknij_jasinski()
  {
@@ -22,4 +22,5 @@
  <input type="button" value="zamknij okno" onclick="okno_zamknij_jasinski()"/>
  </body>
  </html>
+
 
