@@ -1,51 +1,42 @@
-<html>
- <body>
- <textarea cols="90" rows="24"><!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-<title> Użycie fukcji </title>
+<title>Użycie funkcji</title>
 <meta charset="utf-8">
 </head>
 <body>
-<div style="color:navy;font-size:50px;">
-<script language="JavaScript">
-var a=parsefloat(prompt("a=",""));
-var b=parsefloat(prompt("b=",""));
+<div style="color:navy;font-size:30px;">
+<script>
+var a = parseFloat(prompt("a = ", ""));
+var b = parseFloat(prompt("b = ", ""));
 
 function suma_jasi(a, b) {
-return a + b;
+    return a + b;
 }
 
 function odejmowanie_jasi(a, b) {
-return a - b;
+    return a - b;
 }
 
 function mnozenie_jasi(a, b) {
-return a * b;
+    return a * b;
 }
 
-function kwadrat_jasi(a) {
-return a*a;
-}
-
-function kwadrat_jasi(b) {
-return b*b;
+function kwadrat_jasi(x) {
+    return x * x;
 }
 
 function dzielenie_jasi(a, b) {
-return a % b;
+    return a % b;   
 }
 
-document.write("suma="+suma_jasi(a,b)+"<br>");
-document.write("odejmowanie="+odejmowanie_jasi(a,b)+"<br>");
-document.write("mnozenie="+mnozenie_jasi(a,b)+"<br>");
-document.write(+a+"^2="+kwadrat_jasi(a)+"<br>");
-document.write(+b+"^2="+kwadrat_jasi(b)+"<br>");
-document.write("reszta z dzielenia="+dzielenie_jasi(a,b)+"<br>");
-
+document.write("suma = " + suma_jasi(a, b) + "<br>");
+document.write("odejmowanie = " + odejmowanie_jasi(a, b) + "<br>");
+document.write("mnożenie = " + mnozenie_jasi(a, b) + "<br>");
+document.write(a + "^2 = " + kwadrat_jasi(a) + "<br>");
+document.write(b + "^2 = " + kwadrat_jasi(b) + "<br>");
+document.write("dzielenie = " + dzielenie_jasi(a, b) + "<br>");
 </script>
 </div>
 </body>
-</html>
-</textarea>
- </body>
 </html>
