@@ -1,0 +1,51 @@
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:pink;font-size:50px;">
+<script language="JavaScript">
+var x1_jasi=parseFloat(prompt("x1=",""));
+var x2_jasi=parseFloat(prompt("x2=",""));
+
+function y1_jasi(x1) {
+return 3 * Math.pow(x1_jasi, 6/8);
+ 
+}
+
+function x1_rad(x1) {
+var st_jasi=x1_jasi;
+return (st_jasi * Math.PI) / 180;
+
+}
+
+function y2_jasi(x1){
+var st_jasi=x1_jasi;
+var rad_jasi=(st_jasi * Math.PI) / 180;
+return 2 * Math.cos(rad_jasi) + 3 * Math.sin(rad_jasi);
+}
+
+function y3_jasi(x1,x2) {
+var x1_5= Math.pow(x1_jasi, 5);
+var x2_4= Math.pow(x2_jasi, 4);
+var x1_x2= Math.abs(x1_jasi - x2_jasi);
+var pierwiastek= Math.cbrt(x1_5 + 2 * x2_4);
+return pierwiastek * x1_x2;
+}
+
+var y1_wynik =y1_jasi(x1_jasi);
+var y2_wynik =y2_jasi(x1_jasi);
+var y3_wynik =y3_jasi(x1_jasi,x2_jasi);
+var x1_radiany= x1_rad(x1_jasi);
+
+document.write("x1= " +x1_jasi+"&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x2= " +x2_jasi+"<br>");
+document.write("x1(stopnie)= " +x1_jasi+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x1(radiany)= " +x1_radiany.toFixed(2)+"<br>");
+document.write("y1= " +y1_wynik.toFixed(2)+"<br>");
+document.write("y2= " +y2_wynik.toFixed(2)+"<br>");
+document.write("y3= " +y3_wynik.toFixed(2)+"<br>");
+
+</script>
+</div>
+</body>
+</html>

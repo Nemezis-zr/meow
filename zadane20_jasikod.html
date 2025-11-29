@@ -1,0 +1,76 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24"><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+
+function AB_jasi()
+{
+var xa_jasi= parseFloat(document.getElementById('xa_jasi').value);
+var xb_jasi= parseFloat(document.getElementById('xb_jasi').value);
+var ya_jasi= parseFloat(document.getElementById('ya_jasi').value);
+var yb_jasi= parseFloat(document.getElementById('yb_jasi').value);
+
+var x= xa_jasi - xb_jasi;
+var y= ya_jasi - yb_jasi;
+var x_kwadrat= Math.pow(x,2);
+var y_kwadrat= Math.pow(y,2);
+var suma_kw= x_kwadrat + y_kwadrat;
+var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AB= "+pierwiastek+" cm"
+}
+ 
+function AC_jasi()
+{
+var xa_jasi= parseFloat(document.getElementById('xa_jasi').value);
+var xc_jasi= parseFloat(document.getElementById('xc_jasi').value);
+var ya_jasi= parseFloat(document.getElementById('ya_jasi').value);
+var yc_jasi= parseFloat(document.getElementById('yc_jasi').value);
+
+var x= xa_jasi - xc_jasi;
+var y= ya_jasi - yc_jasi;
+var x_kwadrat= Math.pow(x,2);
+var y_kwadrat= Math.pow(y,2);
+var suma_kw= x_kwadrat + y_kwadrat;
+var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AC= "+pierwiastek+" cm"
+}
+
+function BC_jasi()
+{
+var xb_jasi= parseFloat(document.getElementById('xb_jasi').value);
+var xc_jasi= parseFloat(document.getElementById('xc_jasi').value);
+var yb_jasi= parseFloat(document.getElementById('yb_jasi').value);
+var yc_jasi= parseFloat(document.getElementById('yc_jasi').value);
+
+var x= xb_jasi - xc_jasi;
+var y= yb_jasi - yc_jasi;
+var x_kwadrat= Math.pow(x,2);
+var y_kwadrat= Math.pow(y,2);
+var suma_kw= x_kwadrat + y_kwadrat;
+var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole BC= "+pierwiastek+" cm"
+}
+
+</script>
+ 
+Podaj długość boku xa: <input type="text" id="xa_jasi"> cm &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku ya: <input type="text" id="ya_jasi" > cm<br><br>
+Podaj długość boku xb: <input type="text" id="xb_jasi" > cm&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku yb: <input type="text" id="yb_jasi" > cm<br><br>
+Podaj długość boku xc: <input type="text" id="xc_jasi" > cm&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku yc: <input type="text" id="yc_jasi" > cm<br><br>
+<input type="button" name="AB" value="Długość AB" Onclick="AB_jasi()"><br><br>
+<input type="button" name="AC" value="Długość AC" Onclick="AC_jasi()"><br><br>
+<input type="button" name="BC" value="Długość BC" Onclick="BC_jasi()"><br><br>
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
+</textarea>
+ </body>
+</html>

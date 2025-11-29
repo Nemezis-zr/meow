@@ -1,0 +1,44 @@
+<html>
+<head>
+<script language="JavaScript">
+function pole(a,b)
+{
+a_jasi=parseFloat(a)
+b_jasi=parseFloat(b)
+pole_jasi=a_jasi*b_jasi
+document.getElementsByName('pole_wynik')[0].value=pole_jasi.toFixed(2); 
+alert("pole="+pole_jasi.toFixed(2)+" cm");
+pokaz1.innerHTML="pole="+pole_jasi.toFixed(2)+"cm";
+}
+function obwod(a,b)
+{
+a_jasi=parseFloat(a)
+b_jasi=parseFloat(b)
+obwod_jasi=2*a_jasi + 2*b_jasi
+document.getElementsByName('obwod_wynik')[0].value=obwod_jasi.toFixed(2);
+alert("obwod="+obwod_jasi.toFixed(2)+" cm");
+pokaz2.innerHTML="obwod="+obwod_jasi.toFixed(2)+"cm";
+}
+</script>
+</head>
+<body>
+Obliczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole(this.boka.value,this.bokb.value);
+obwod(this.boka.value,this.bokb.value);return false">
+Podaj a=
+<input size="6" name="boka">
+Podaj b=
+<input size="6" name="bokb">
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+pole=<input size="6" name="pole_wynik">
+obwod=<input size="6" name="obwod_wynik">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
