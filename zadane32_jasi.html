@@ -1,0 +1,35 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function pociag(typ_k, ile_wagonow_k, predkosc_k, producent_k) 
+ {
+   this.typ = typ_k;
+   this.ile_wagonow = ile_wagonow_k;
+   this.predkosc = predkosc_k;
+   this.producent = producent_k;
+ } 
+ pociag.prototype.wypisz = function () 
+ {
+   alert(this.typ + ' ' + this.ile_wagonow + ' ' + this.predkosc);
+ };
+ var pociag1 = new pociag("Osobowy", 8, "120 km/h", "Pesa"); 
+ var pociag2 = new pociag("Towarowy", 20, "90 km/h", "Newag");
+ var pociag3 = new pociag("Pendolino", 7, "200 km/h", "Alstom");
+
+ pociag1.wypisz(); 
+ pociag2.wypisz();
+ pociag3.wypisz();
+
+ document.write("dostęp do właściwości<br>");
+
+ document.write("pociąg pierwszy " + pociag1.typ + " " + pociag1.ile_wagonow + " " + pociag1.predkosc + " " + pociag1.producent + "<p>");
+ document.write("pociąg drugi " + pociag2.typ + " " + pociag2.ile_wagonow + " " + pociag2.predkosc + " " + pociag2.producent + "<p>");
+ document.write("pociąg trzeci " + pociag3.typ + " " + pociag3.ile_wagonow + " " + pociag3.predkosc + " " + pociag3.producent + "<p>");
+
+ </script>
+ </head>
+ <body>
+ <br>
+ programowanie obiektowe
+ </body>
+</html>

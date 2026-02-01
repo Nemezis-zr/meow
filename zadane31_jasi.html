@@ -1,0 +1,32 @@
+<html>
+ <head>
+ <script type="text/javascript">
+<script type="text/javascript">
+var pociag = {
+  nazwa: 'InterCity',
+  typ: 'Osobowy',
+  ile_wagonow: 10,
+  pociag_pokaz_jasinski: function ()
+  {
+    document.write(this.nazwa + ' ' + this.typ + '<br>');
+  }
+}
+pociag.pociag_pokaz_jasinski();
+pociag.predkosc = 140;
+pociag.pociag_wypisz_jasinski = function () {alert('Prędkość pociągu: ' + this.predkosc + ' km/h')}
+pociag_wypisz_jasinski();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe. <br>
+Obiekt to pociąg <br>
+Pola: <br>
+nazwa <br>
+typ <br>
+ile_wagonow <br>
+metoda: pociag_pokaz_jasinski <br>
+nowe pole to predkosc <br>
+nowa metoda to pociag_wypisz_jasinski(); <br>
+</body>
+</html>
